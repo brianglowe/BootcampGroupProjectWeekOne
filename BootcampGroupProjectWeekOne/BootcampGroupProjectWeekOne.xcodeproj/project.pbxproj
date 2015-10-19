@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D3D1010B1BD57DA2008FF45E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D1010A1BD57DA2008FF45E /* AppDelegate.swift */; };
-		D3D1010D1BD57DA2008FF45E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D1010C1BD57DA2008FF45E /* ViewController.swift */; };
 		D3D101101BD57DA2008FF45E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D1010E1BD57DA2008FF45E /* Main.storyboard */; };
 		D3D101121BD57DA2008FF45E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D101111BD57DA2008FF45E /* Assets.xcassets */; };
 		D3D101151BD57DA2008FF45E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D101131BD57DA2008FF45E /* LaunchScreen.storyboard */; };
 		D3D101201BD57DA2008FF45E /* BootcampGroupProjectWeekOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D1011F1BD57DA2008FF45E /* BootcampGroupProjectWeekOneTests.swift */; };
 		D3D1012B1BD57DA2008FF45E /* BootcampGroupProjectWeekOneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D1012A1BD57DA2008FF45E /* BootcampGroupProjectWeekOneUITests.swift */; };
+		D3D101391BD5800F008FF45E /* RootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D101381BD5800F008FF45E /* RootTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D3D1013B1BD58075008FF45E /* Celebrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D1013A1BD58075008FF45E /* Celebrity.swift */; settings = {ASSET_TAGS = (); }; };
+		D3D1013D1BD581DD008FF45E /* Gameplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D1013C1BD581DD008FF45E /* Gameplay.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		D3D101071BD57DA1008FF45E /* BootcampGroupProjectWeekOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BootcampGroupProjectWeekOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D1010A1BD57DA2008FF45E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D3D1010C1BD57DA2008FF45E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D3D1010F1BD57DA2008FF45E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3D101111BD57DA2008FF45E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3D101141BD57DA2008FF45E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		D3D101261BD57DA2008FF45E /* BootcampGroupProjectWeekOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BootcampGroupProjectWeekOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D1012A1BD57DA2008FF45E /* BootcampGroupProjectWeekOneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootcampGroupProjectWeekOneUITests.swift; sourceTree = "<group>"; };
 		D3D1012C1BD57DA2008FF45E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3D101381BD5800F008FF45E /* RootTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTableViewController.swift; sourceTree = "<group>"; };
+		D3D1013A1BD58075008FF45E /* Celebrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Celebrity.swift; path = ../Celebrity.swift; sourceTree = "<group>"; };
+		D3D1013C1BD581DD008FF45E /* Gameplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gameplay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +101,11 @@
 		D3D101091BD57DA1008FF45E /* BootcampGroupProjectWeekOne */ = {
 			isa = PBXGroup;
 			children = (
-				D3D1010A1BD57DA2008FF45E /* AppDelegate.swift */,
-				D3D1010C1BD57DA2008FF45E /* ViewController.swift */,
+				D3D1013A1BD58075008FF45E /* Celebrity.swift */,
+				D3D1013C1BD581DD008FF45E /* Gameplay.swift */,
+				D3D101381BD5800F008FF45E /* RootTableViewController.swift */,
 				D3D1010E1BD57DA2008FF45E /* Main.storyboard */,
+				D3D1010A1BD57DA2008FF45E /* AppDelegate.swift */,
 				D3D101111BD57DA2008FF45E /* Assets.xcassets */,
 				D3D101131BD57DA2008FF45E /* LaunchScreen.storyboard */,
 				D3D101161BD57DA2008FF45E /* Info.plist */,
@@ -255,7 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3D1010D1BD57DA2008FF45E /* ViewController.swift in Sources */,
+				D3D1013B1BD58075008FF45E /* Celebrity.swift in Sources */,
+				D3D101391BD5800F008FF45E /* RootTableViewController.swift in Sources */,
+				D3D1013D1BD581DD008FF45E /* Gameplay.swift in Sources */,
 				D3D1010B1BD57DA2008FF45E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
