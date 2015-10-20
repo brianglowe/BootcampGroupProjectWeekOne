@@ -20,6 +20,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="LDc-ni-bku" kind="show" identifier="GameplaySegueIdentifier" id="uXJ-ga-Pma"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -33,10 +36,10 @@
             </objects>
             <point key="canvasLocation" x="-53" y="353"/>
         </scene>
-        <!--View Controller-->
+        <!--Gameplay View Controller-->
         <scene sceneID="OxM-3H-42X">
             <objects>
-                <viewController id="LDc-ni-bku" sceneMemberID="viewController">
+                <viewController id="LDc-ni-bku" customClass="GameplayViewController" customModule="BootcampGroupProjectWeekOne" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Uli-o7-mLk"/>
                         <viewControllerLayoutGuide type="bottom" id="HcR-VE-99r"/>

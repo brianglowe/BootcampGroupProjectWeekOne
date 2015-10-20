@@ -9,5 +9,9 @@
 import Foundation
 
 class Gameplay {
-    var name: String = ""
+    var gameOptions: [Celebrity] = []
+    
+
+    
+    
 }

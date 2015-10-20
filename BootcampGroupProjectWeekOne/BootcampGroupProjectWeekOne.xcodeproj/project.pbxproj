@@ -53,6 +53,7 @@
 		D3D1013A1BD58075008FF45E /* Celebrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Celebrity.swift; path = ../Celebrity.swift; sourceTree = "<group>"; };
 		D3D1013C1BD581DD008FF45E /* Gameplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gameplay.swift; sourceTree = "<group>"; };
 		D3D1013E1BD58515008FF45E /* GameplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameplayViewController.swift; sourceTree = "<group>"; };
+		D3D101401BD586FA008FF45E /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +84,7 @@
 		D3D100FE1BD57DA1008FF45E = {
 			isa = PBXGroup;
 			children = (
+				D3D101401BD586FA008FF45E /* MyPlayground.playground */,
 				D3D101091BD57DA1008FF45E /* BootcampGroupProjectWeekOne */,
 				D3D1011E1BD57DA2008FF45E /* BootcampGroupProjectWeekOneTests */,
 				D3D101291BD57DA2008FF45E /* BootcampGroupProjectWeekOneUITests */,
