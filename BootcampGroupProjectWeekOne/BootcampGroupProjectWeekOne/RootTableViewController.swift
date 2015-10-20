@@ -12,8 +12,6 @@ class RootTableViewController: UITableViewController {
 
     let gameOne = Gameplay()
     
-    let celebrities = ["Kanye","Donald","Ted","Kim K."]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -45,7 +43,6 @@ class RootTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return gameOne.gameOptions.count
     }
-
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("CelebrityIdentifier", forIndexPath: indexPath)
@@ -54,7 +51,10 @@ class RootTableViewController: UITableViewController {
         return cell
     }
     
-    /*
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+      //  code
+    }
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -62,7 +62,7 @@ class RootTableViewController: UITableViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+
 
 }
 

@@ -10,6 +10,8 @@ import UIKit
 
 class GameplayViewController: UIViewController {
 
+    let tweetToDisplay = 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
