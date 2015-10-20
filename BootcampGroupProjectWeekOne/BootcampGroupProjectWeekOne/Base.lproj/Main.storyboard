@@ -4,6 +4,47 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
+        <!--Add Player View Controller-->
+        <scene sceneID="Xf1-Gs-xev">
+            <objects>
+                <viewController id="4Vc-cL-ITC" customClass="AddPlayerViewController" customModule="BootcampGroupProjectWeekOne" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JEp-6Q-DdG"/>
+                        <viewControllerLayoutGuide type="bottom" id="iwh-M9-JEl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YRm-c0-X3e">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYJ-UU-MyI">
+                                <rect key="frame" x="194" y="375" width="213" height="145"/>
+                                <state key="normal" title="Add Player"/>
+                                <connections>
+                                    <action selector="addPlayerButton:" destination="4Vc-cL-ITC" eventType="touchUpInside" id="Qrp-QI-qdS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxm-WK-HuF">
+                                <rect key="frame" x="147" y="40" width="306" height="101"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter player name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hBw-qg-d0J">
+                                <rect key="frame" x="147" y="242" width="306" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="playerNameInput" destination="hBw-qg-d0J" id="qcu-O0-8ZR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Km-YM-cI1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="315" y="-343"/>
+        </scene>
         <!--Root View Controller-->
         <scene sceneID="MCG-0J-SQm">
             <objects>

@@ -12,17 +12,17 @@ struct Celebrity {
     var name: String?
     var tweets: [String] = []
     
-//    let celebrityOptions = [
-//        [   "name"  : "Kanye",
-//            "Tweets" : ["I am the king", "I like golddiggers", "I am a little man", "I like fish dips"]
-//        ],
-//        [   "name"  : "Donald",
-//            "Tweets" : ["I am the queen", "I like hotels", "I have great hair", "I like walls"]
-//        ],
-//        [   "name"  : "Ted Nugent",
-//            "Tweets" : ["Deers deserve to die", "America!", "Rock and roll", "Party in the USA"]
-//        ],
-//    ]
+    let celebrityOptions = [
+        [   "name"  : "Kanye",
+            "Tweets" : ["I am the king", "I like golddiggers", "I am a little man", "I like fish dips"]
+        ],
+        [   "name"  : "Donald",
+            "Tweets" : ["I am the queen", "I like hotels", "I have great hair", "I like walls"]
+        ],
+        [   "name"  : "Ted Nugent",
+            "Tweets" : ["Deers deserve to die", "America!", "Rock and roll", "Party in the USA"]
+        ],
+    ]
     
     
     
