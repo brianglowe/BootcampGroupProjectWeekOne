@@ -12,7 +12,7 @@ struct Celebrity {
     let games = [
         "Kanye": ["I am the king", "I like golddiggers", "I am a little man", "I like fish dips"],
         "Donald" : ["I am the queen", "I like hotels", "I have great hair", "I like walls"],
-        "Ted Nugent": ["Deers deserve to die", "America!", "Rock and roll", "Party in the USA"]
+        "Ted Nugent": ["Deer deserve to die", "America!", "Rock and roll", "Party in the USA"]
     ]
 
 }

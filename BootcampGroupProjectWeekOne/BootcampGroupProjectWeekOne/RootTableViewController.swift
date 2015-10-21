@@ -9,12 +9,9 @@
 import UIKit
 
 
-
 class RootTableViewController: UITableViewController {
 
     let gameOne = Gameplay()
-    
-    let celebrities = Celebrity()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +24,8 @@ class RootTableViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    
     
     // MARK: - Table view data source
     
@@ -43,66 +42,21 @@ class RootTableViewController: UITableViewController {
     }
     
     // MARK: - Navigation
-//    
-//    // In a storyboard-based application, you will often want to do a little preparation before navigation
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        
-//        let indexPath = tableView.indexPathForCell(sender as! UITableViewCell)
-//        let listVC = segue.destinationViewController as! GameplayViewController
-//        
-//        
-//            let game = gameOne.gameOptions[indexPath!.row]
-//            listVC.tweetToDisplay = game.tweets[0]
-//    }
-//    
-//    
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let indexPath = tableView.indexPathForCell(sender as! UITableViewCell)
+        let listVC = segue.destinationViewController as! GameplayViewController
+        
+            let game = gameOne.gameNames[indexPath!.row]
+            let celebName = game
+            listVC.celebTweets = gameOne.gameTweets(celebName)
+    }
+    
+
+    
 }
-
-
-
-
-//    let celebrities = ["Kanye", "Ted", "Chris", "Fred"]
-//    
-//    
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        
-//    }
-//
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//    }
-//
-//    // MARK: - Table view data source
-//
-//    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        // #warning Incomplete implementation, return the number of rows
-//        return celebrities.count
-//    }
-//    
-//    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCellWithIdentifier("CelebrityIdentifier", forIndexPath: indexPath)
-//        cell.textLabel?.text = gameOne.gameOptions[indexPath.row].name
-//
-//        return cell
-//    }
-//    
-//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//      //  code
-//    }
-//    
-//    // MARK: - Navigation
-//
-//    // In a storyboard-based application, you will often want to do a little preparation before navigation
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        // Get the new view controller using segue.destinationViewController.
-//        // Pass the selected object to the new view controller.
-//    }
-//
-//
-//}
 
 
 
