@@ -156,6 +156,32 @@
             </objects>
             <point key="canvasLocation" x="774" y="353"/>
         </scene>
+        <!--Player Score View Controller-->
+        <scene sceneID="BZm-TF-tZN">
+            <objects>
+                <viewController id="AL2-WB-o3k" customClass="PlayerScoreViewController" customModule="BootcampGroupProjectWeekOne" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="og2-xU-vKh"/>
+                        <viewControllerLayoutGuide type="bottom" id="khF-wZ-rWB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P7D-d8-i3u">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SCORE: #" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMW-C1-Pp4">
+                                <rect key="frame" x="150" y="221" width="301" height="158"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GOo-oM-tCP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1445" y="353"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="93q-aM-gYl">
             <objects>
