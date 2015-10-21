@@ -17,7 +17,9 @@ class GameplayViewController: UIViewController {
     
     var gameTweets: [String] = []
     var tweet: String = ""
-
+    var answer = true
+    
+    var score = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +29,7 @@ class GameplayViewController: UIViewController {
         tweetTextField.text = tweet
         
         
-        print("View did load the tweets brought from root VC = \(gameTweets statu)")
+        print("View did load the tweets brought from root VC = \(gameTweets)")
         // Do any additional setup after loading the view.
     }
 
@@ -71,6 +73,8 @@ class GameplayViewController: UIViewController {
 
     
     @IBAction func answerButton(sender: AnyObject) {
+        if
+        
     }
 
     
