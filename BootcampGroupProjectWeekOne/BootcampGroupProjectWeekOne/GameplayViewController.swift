@@ -10,11 +10,14 @@ import UIKit
 
 class GameplayViewController: UIViewController {
 
-    let tweetToDisplay = 
+    @IBOutlet weak var tweetTextField: UITextView!
+   
+    var tweetToDisplay = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Do any additional setup after loading the view.
     }
 

@@ -83,6 +83,9 @@
                             <constraint firstItem="URq-67-h3c" firstAttribute="centerX" secondItem="k6G-kt-Ayo" secondAttribute="centerX" constant="1" id="vnd-uo-abY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tweetTextField" destination="hTD-bI-iAz" id="0qU-fV-K5a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ruO-p7-7hk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

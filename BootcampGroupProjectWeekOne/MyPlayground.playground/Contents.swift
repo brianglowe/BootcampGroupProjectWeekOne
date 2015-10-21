@@ -2,20 +2,7 @@
 
 import UIKit
 
+var celebTweets: [String: [String]] = [:]
 
-struct Celebrity {
-    var name: String = ""
-    var tweets: [String] = []
-}
+var kanye = celebTweets["Kayne"]
 
-class gameOptions {
-    var gameBoard: [Celebrity] = []
-    
-    func addCelebrity(newName: String) {
-        var newCeleb = Celebrity()
-        newCeleb.name = newName
-        gameBoard += [newCeleb]
-    }
-}
-
-var kanye = Celebrity

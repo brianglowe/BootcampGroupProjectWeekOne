@@ -9,9 +9,17 @@
 import Foundation
 
 class Gameplay {
-    var gameOptions: [Celebrity] = []
+    var gameNames: [String] = []
+    var gameOptions = Celebrity().games
     
-
+    func games() -> [String] {
+       var game = [String](gameOptions.keys)
+        gameNames = game
+    
+        return gameNames
+    }
+    
+    
     
     
 }
