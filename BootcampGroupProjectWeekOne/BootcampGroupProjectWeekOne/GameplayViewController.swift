@@ -10,11 +10,26 @@ import UIKit
 
 class GameplayViewController: UIViewController {
 
-    let tweetToDisplay = 
+    @IBOutlet weak var tweetTextField: UITextView!
+    
+    var celebTweets: [String] = [] // coming from selection on first View
+    let fakeTweets = ["Give me the boots", "Lets make beer", "Pizza pizza", "Im the greatest in the world", "Adriene", "Victory!"]
+    
+    var gameTweets: [String] = []
+    var tweet: String = ""
+    var trueAnswer: Bool?
+    var userGuess: Bool?
+    
+    var score = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        print("View did load the tweets brought from root VC = \(celebTweets)")
+        
+        startGame()
+        tweetTextField.text = tweet
+        
         // Do any additional setup after loading the view.
     }
 
@@ -22,6 +37,52 @@ class GameplayViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func createTweetArrayForGame() -> [String] {
+        gameTweets = celebTweets + fakeTweets
+        print("\(gameTweets)")
+        return gameTweets
+    }
+    
+    func randomTweet () -> String {
+        let unsignedArrayCount = UInt32(gameTweets.count)
+        let unsignedRandomNumber = arc4random_uniform(unsignedArrayCount)
+        let randomNumber = Int(unsignedRandomNumber)
+        
+        tweet = gameTweets[randomNumber]
+        print("the chosen tweet = \(tweet)")
+        return tweet
+    }
+    
+    func scorePlay(tweet: String) -> Bool {
+        if celebTweets.contains(tweet) {
+            print("true")
+            trueAnswer = true
+            return true
+        }
+        
+        print("false")
+        trueAnswer = false
+        return false
+    }
+
+    func startGame() {
+        createTweetArrayForGame()
+        randomTweet()
+        scorePlay(tweet)
+        
+    }
+
+    
+    @IBAction func answerButton(sender: AnyObject) {
+        // when true is selected, check scorePlay
+        if userGuess == trueAnswer {
+            score++
+        }
+        
+    }
+
+    
     
 
     /*
@@ -35,3 +96,7 @@ class GameplayViewController: UIViewController {
     */
 
 }
+
+
+
+
