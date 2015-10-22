@@ -17,19 +17,19 @@ class GameplayViewController: UIViewController {
     
     var gameTweets: [String] = []
     var tweet: String = ""
-    var answer = true
+    var trueAnswer: Bool?
+    var userGuess: Bool?
     
     var score = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print("View did load the tweets brought from root VC = \(celebTweets)")
         
         startGame()
         tweetTextField.text = tweet
         
-        
-        print("View did load the tweets brought from root VC = \(gameTweets)")
         // Do any additional setup after loading the view.
     }
 
@@ -57,10 +57,12 @@ class GameplayViewController: UIViewController {
     func scorePlay(tweet: String) -> Bool {
         if celebTweets.contains(tweet) {
             print("true")
+            trueAnswer = true
             return true
         }
         
         print("false")
+        trueAnswer = false
         return false
     }
 
@@ -73,7 +75,10 @@ class GameplayViewController: UIViewController {
 
     
     @IBAction func answerButton(sender: AnyObject) {
-        if
+        // when true is selected, check scorePlay
+        if userGuess == trueAnswer {
+            score++
+        }
         
     }
 

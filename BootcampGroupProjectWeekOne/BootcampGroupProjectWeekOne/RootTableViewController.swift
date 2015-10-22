@@ -51,7 +51,10 @@ class RootTableViewController: UITableViewController {
         
             let game = gameOne.gameNames[indexPath!.row]
             let celebName = game
-            listVC.celebTweets = gameOne.gameTweets(celebName)
+            let ret = gameOne.gameTweets(celebName)
+            listVC.celebTweets = ret
+            print("after \(listVC.celebTweets)")
+            print("after2 \(ret)")
     }
     
 

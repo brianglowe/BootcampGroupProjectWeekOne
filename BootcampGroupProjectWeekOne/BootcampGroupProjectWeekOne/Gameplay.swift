@@ -9,9 +9,8 @@
 import Foundation
 
 class Gameplay {
-    var gameNames: [String] = []
-    var tweets: [String] = []
     var gameOptions = Celebrity().games
+    var gameNames: [String] = []
     
     func games() -> [String] {
         gameNames = [String](gameOptions.keys)
@@ -20,8 +19,10 @@ class Gameplay {
     }
     
     func gameTweets(celebName: String) -> [String] {
+        var tweets: [String] = []
         if let chosenGame = gameOptions[celebName] {
             for tweet in chosenGame {
+                print("tweet \(tweet)")
                 tweets.append(tweet)
             }
         }
